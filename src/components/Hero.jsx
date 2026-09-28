@@ -1,7 +1,5 @@
 import React from 'react'
-import logo from '../assets/Nafasat-logo.png';
 import bg from '../assets/nafasat-1.jpeg';
-import bg2 from '../assets/nafasat-2.png'
 import './css/Hero.css'
 const Hero = () => {
   return (

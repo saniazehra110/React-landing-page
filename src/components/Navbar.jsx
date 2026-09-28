@@ -37,7 +37,7 @@ const Navbar = () => {
 
 export default Navbar;*/
 
-import { useState } from "react";
+
 import logo from '../assets/Nafasat-logo.png';
 import './css/Navbar.css';
 
