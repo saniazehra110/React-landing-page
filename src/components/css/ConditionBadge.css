@@ -1,0 +1,81 @@
+.ConditionBadge {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+}
+
+@media (max-width: 768px) {
+ .ConditionBadge{
+    flex-direction: column;
+    height: 90vh;
+ }
+}
+
+/* From Uiverse.io by fitoooorkjgod */ 
+.cards {   position: relative; 
+    width: 190px;  
+ height: 254px; 
+  background-color: #2f2f30; 
+  display: flex;  
+ flex-direction: column;
+ justify-content: center;  
+ padding: 12px;  
+ gap: 12px;  
+ border-radius: 8px;
+   cursor: pointer;
+}
+
+.cards::before {   
+  content: ""; 
+  position: absolute;  
+   inset: 0;   left: -5px;  
+    margin: auto; 
+    width: 250px; 
+  height: 264px;   border-radius: 10px; 
+  background: linear-gradient(-45deg, #F5AF19 0%, #F5AF19 100%);
+   z-index: -1;
+    pointer-events: none;  
+   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  }
+ .cards::after {  
+    content: "";  
+   z-index: -1;  
+   position: absolute;  
+   inset: 0; 
+    background: linear-gradient(-45deg, #ab9e60 0%, #ab9e60 100%);  
+   transform: translate3d(0, 0, 0) scale(0.95);  
+   filter: blur(20px); 
+    }
+.cards h1 {   
+    font-size: 20px;
+   text-transform: capitalize;  
+     font-weight: 700;   color: #F5AF19; 
+     text-align: center;
+     }
+ .cards h2:last-child {  
+    color: #f7ff1c;  
+    font-weight: 600;
+    text-align: center; }
+
+   .cards:hover::after {
+  filter: blur(30px);
+}
+.cards:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+@media (max-width: 768px) {
+  .cards{
+    width:80% ;
+  }
+  .ConditionBadge{
+    height: 100vh;
+    gap: 20px;
+align-items: center;
+display: flex;
+justify-content: center;
+flex-direction: column
+  }
+  
+}

@@ -1,0 +1,248 @@
+/* =========================
+   Hero Main Section
+========================= */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/nafasat-1.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+
+/* =========================
+   Hero Text
+========================= */
+
+.hero-text {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    text-align: center;
+}
+
+
+/* =========================
+   Hero Heading
+========================= */
+
+.hero-text h1 {
+  font-size: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 25px;
+  border-radius: 15px;
+}
+
+/* =========================
+   Letter Animation
+========================= */
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: letterReveal 0.6s ease-out forwards;
+}
+
+@keyframes letterReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+.letter:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 0.75s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 0.9s;
+}
+
+.letter:nth-child(9) {
+  animation-delay: 1.05s;
+}
+
+.letter:nth-child(10) {
+  animation-delay: 1.2s;
+}
+
+.letter:nth-child(11) {
+  animation-delay: 1.35s;
+}
+
+.letter:nth-child(12) {
+  animation-delay: 1.5s;
+}
+
+.letter:nth-child(13) {
+  animation-delay: 1.65s;
+}
+
+.letter:nth-child(14) {
+  animation-delay: 1.8s;
+}
+
+.letter:nth-child(15) {
+  animation-delay: 1.95s;
+}
+
+
+/* =========================
+   Paragraph
+========================= */
+
+.paragraph {
+  opacity: 0;
+  animation: paragraphReveal 1.2s ease-out forwards;
+  animation-delay: 2.3s;
+
+  font-size: 30px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  padding: 20px 25px;
+  border-radius: 15px;
+}
+
+@keyframes paragraphReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* =========================
+   Explore Button
+========================= */
+
+.explore-btn {
+  opacity: 0;
+  animation: buttonReveal 1s ease-out forwards;
+  animation-delay: 3.7s;
+
+  background-color: #F5AF19;
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes buttonReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   Tablet / Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+    padding: 15px 18px;
+  }
+
+  .explore-btn {
+    margin-top: 20px;
+  }
+}
+
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .letter {
+    font-size: 30px;
+  }
+
+  .paragraph {
+    font-size: 17px;
+    width: auto;
+    padding: 15px;
+  }
+
+  .explore-btn {
+    width: 140px;
+    height: 45px;
+  }
+}
